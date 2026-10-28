@@ -2,7 +2,7 @@
   --navy: #202b35;
   --navy-2: #2c3843;
   --steel: #5e6b76;
-  --blue: #0f52ba;
+  --blue: #2b76ba;
   --electric: var(--blue);
   --white: #ffffff;
   --grey-50: #f7f8f9;
@@ -318,7 +318,7 @@ h3 {
   display: grid;
   position: relative;
   z-index: 2;
-  width: 11.05rem;
+  width: 16.575rem;
   height: 4rem;
   flex: 0 0 auto;
   place-items: center;
@@ -4832,7 +4832,7 @@ h3 {
 }
 
 .site-footer {
-  background: var(--navy);
+  background: #3d4851;
 }
 
 .site-footer::before {
