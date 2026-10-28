@@ -1145,6 +1145,10 @@ h3 {
   line-height: 1.7;
 }
 
+.section-heading__desktop-break {
+  display: none;
+}
+
 .section-heading--light h2 {
   color: var(--white);
 }
@@ -6234,6 +6238,18 @@ h3 {
 }
 
 @media (min-width: 1101px) {
+  #capabilities .section-heading {
+    max-width: min(82rem, calc(100vw - 4rem));
+  }
+
+  #capabilities .section-heading > p {
+    max-width: none;
+  }
+
+  #capabilities .section-heading__desktop-break {
+    display: initial;
+  }
+
   #about .materials__summary {
     white-space: nowrap;
   }

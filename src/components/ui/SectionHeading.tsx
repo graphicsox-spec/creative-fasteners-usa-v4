@@ -4,6 +4,7 @@ type SectionHeadingProps = {
   title: string;
   titleLines?: string[];
   description?: string;
+  descriptionBreakAfter?: string;
   light?: boolean;
 };
 
@@ -13,8 +14,16 @@ export function SectionHeading({
   title,
   titleLines,
   description,
+  descriptionBreakAfter,
   light = false,
 }: SectionHeadingProps) {
+  const descriptionBreakPosition = description && descriptionBreakAfter
+    ? description.indexOf(descriptionBreakAfter)
+    : -1;
+  const descriptionBreakIndex = descriptionBreakPosition >= 0 && descriptionBreakAfter
+    ? descriptionBreakPosition + descriptionBreakAfter.length
+    : -1;
+
   return (
     <div className={`section-heading ${light ? 'section-heading--light' : ''}`}>
       <div className="section-heading__kicker">
@@ -26,7 +35,17 @@ export function SectionHeading({
           ? titleLines.map((line) => <span className="section-heading__line" key={line}>{line}</span>)
           : title}
       </h2>
-      {description ? <p>{description}</p> : null}
+      {description ? (
+        <p>
+          {descriptionBreakIndex > 0 ? (
+            <>
+              {description.slice(0, descriptionBreakIndex)}
+              <br className="section-heading__desktop-break" />{' '}
+              {description.slice(descriptionBreakIndex).trimStart()}
+            </>
+          ) : description}
+        </p>
+      ) : null}
     </div>
   );
 }

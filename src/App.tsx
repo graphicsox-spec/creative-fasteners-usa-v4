@@ -126,6 +126,7 @@ export default function App() {
                   eyebrow="Manufacturing Capabilities"
                   title="Cold Heading & Thread Rolling"
                   description="Cold Heading, Thread Rolling, and Secondary Manufacturing Processes Engineered to Meet Your Drawing Specifications, Material Requirements, and Performance Standards."
+                  descriptionBreakAfter="Specifications,"
                 />
               </div>
             </Reveal>
