@@ -95,11 +95,11 @@ export default function App() {
               <article className="materials__card">
                 <h4>Material Capabilities</h4>
                 <ul>
-                  <li><strong>Stainless Steel:</strong> 316, 304 / 18-8, and 302</li>
-                  <li><strong>Alloy Steel:</strong> 4037 and 8740</li>
+                  <li><strong>Stainless Steel:</strong> 18-8, 302, 304L, and 316L</li>
+                  <li><strong>Alloy Steel:</strong> 4037, 8740, and others</li>
                   <li><strong>Copper Alloys:</strong> Silicon bronze and brass</li>
                   <li><strong>Specialty Alloys:</strong> A286, PH 13-8, Monel 400, and Inconel 718</li>
-                  <li><strong>Aluminum:</strong> 7075</li>
+                  <li><strong>Aluminum:</strong> 7075 and others</li>
                 </ul>
               </article>
               <article className="materials__card">
