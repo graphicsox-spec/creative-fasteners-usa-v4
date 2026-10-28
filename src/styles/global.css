@@ -2836,16 +2836,13 @@ h3 {
   }
 
   .capability-carousel__content--mobile {
-    top: 59.5%;
+    top: auto;
+    bottom: 5%;
     left: 8%;
     right: auto;
     width: 84%;
     align-items: stretch;
     transform: none;
-  }
-
-  .capability-carousel__content--dense {
-    top: 52%;
   }
 
   .capability-carousel__content--mobile h3 {

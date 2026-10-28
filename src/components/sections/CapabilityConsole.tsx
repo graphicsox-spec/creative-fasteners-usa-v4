@@ -137,7 +137,7 @@ export function CapabilityConsole() {
               />
               <figcaption className="capability-carousel__sr-only">{slide.title}</figcaption>
               <div
-                className={`capability-carousel__content${isMobile ? ' capability-carousel__content--mobile' : ''}${isMobile && slide.id === 'secondary-operations' ? ' capability-carousel__content--dense' : ''}`}
+                className={`capability-carousel__content${isMobile ? ' capability-carousel__content--mobile' : ''}`}
                 aria-hidden={!isActive}
               >
                 <h3>{slide.title}</h3>
