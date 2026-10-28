@@ -4846,6 +4846,18 @@ h3 {
   color: #c4cdd3;
 }
 
+.site-footer__contact {
+  color: #c4cdd3;
+  font-size: 0.8rem;
+  font-style: normal;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.site-footer__hours {
+  margin-top: 1rem;
+}
+
 .site-footer__bottom {
   color: #aeb9c0;
 }

@@ -20,7 +20,21 @@ export function Footer() {
         </div>
         <div>
           <h2>Contact</h2>
-          <p>Contact details will be added after client confirmation.</p>
+          <address className="site-footer__contact">
+            <strong>Chris Brumby</strong><br />
+            <a href="tel:+19518373139">951-837-3139</a><br />
+            <a href="mailto:Chris@creativefastenersusa.com">Chris@creativefastenersusa.com</a><br />
+            <a href="mailto:sales@creativefastenersusa.com">sales@creativefastenersusa.com</a><br />
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=42066+Avenida+Alvarado%2C+Ste.+M%2C+Temecula%2C+CA+92590"
+              target="_blank"
+              rel="noreferrer"
+            >
+              42066 Avenida Alvarado, Ste. M<br />
+              Temecula, CA 92590
+            </a>
+          </address>
+          <p className="site-footer__hours"><strong>Business hours</strong><br />Monday–Friday, 8am–4pm</p>
         </div>
         <div className="site-footer__cta">
           <span>Have a drawing or part requirement?</span>
