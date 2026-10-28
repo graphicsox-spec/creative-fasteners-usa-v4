@@ -73,7 +73,8 @@ export function RFQForm() {
         <div id="rfq-integration-notice" className="form-status form-status--notice" role="status" tabIndex={-1}>
           <strong>Your contact details passed local validation.</strong>
           <span>
-            Nothing was transmitted because the submission service is not connected yet. Please use the confirmed sales contact once supplied.
+            Nothing was transmitted because the submission service is not connected yet. Please email{' '}
+            <a href="mailto:sales@creativefastenersusa.com">sales@creativefastenersusa.com</a> instead.
           </span>
         </div>
       ) : null}
