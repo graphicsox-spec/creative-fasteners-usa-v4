@@ -4,7 +4,7 @@ import { industries, navigation } from '../../content/homepage';
 const searchTargets = [
   { label: 'Home', href: '#home', terms: ['home', 'homepage'] },
   { label: 'Products', href: '#products', terms: ['product', 'products', 'fastener', 'fasteners'] },
-  { label: 'Capabilities', href: '#capabilities', terms: ['capability', 'capabilities', 'manufacturing', 'forming', 'finish', 'cold heading', 'thread rolling', 'secondary operations', 'heat treating', 'plating', 'patching', 'black oxide', 'passivation'] },
+  { label: 'Capabilities', href: '#capabilities', terms: ['capability', 'capabilities', 'manufacturing', 'forming', 'finish', 'cold heading', 'thread rolling', 'secondary operations', 'heat treating', 'plating', 'patching', 'black oxide', 'passivation', 'drilling', 'grinding'] },
   { label: 'Quality', href: '#quality', terms: ['quality', 'inspection', 'traceability', 'process'] },
   { label: 'Industries', href: '#industries', terms: ['industry', 'industries', 'aerospace', 'defense', 'marine', 'oil', 'gas', 'automotive', 'custom'] },
   { label: 'About', href: '#about', terms: ['about', 'company', 'creative fasteners'] },

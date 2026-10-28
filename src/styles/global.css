@@ -2623,6 +2623,12 @@ h3 {
   object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .capability-carousel__slide img {
+    opacity: 0.7;
+  }
+}
+
 .capability-carousel__content {
   position: absolute;
   z-index: 3;

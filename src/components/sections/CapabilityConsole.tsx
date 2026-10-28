@@ -36,8 +36,8 @@ const slides: Slide[] = [
   {
     id: 'secondary-operations',
     title: 'Secondary Operations',
-    description: 'We offer a wide range of secondary operations including heat treating, plating, patching, black oxide, and passivation, providing additional processing to meet specific application and performance requirements. Integrated into our manufacturing process, these services help ensure our fasteners meet customer drawings, specifications, and quality standards.',
-    highlights: ['Heat Treating', 'Plating', 'Patching', 'Black Oxide', 'Passivation'],
+    description: 'We offer a wide range of secondary operations, including heat treating, plating, patching, black oxide, passivation, drilling, and grinding to provide additional processing that meets specific application and performance requirements. Integrated into our manufacturing process, these services help ensure our fasteners meet customer drawings, specifications, and quality standards.',
+    highlights: ['Heat Treating', 'Plating', 'Patching', 'Black Oxide', 'Passivation', 'Drilling', 'Grinding'],
     desktopImage: asset('images/capability-banners/secondary-operations-desktop.jpg'),
     mobileImage: asset('images/capability-banners/secondary-operations-mobile.jpg'),
     mobileCtaTop: '89.15%',
