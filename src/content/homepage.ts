@@ -223,28 +223,28 @@ export const industries = [
   {
     number: '03',
     title: 'Marine',
-    description: 'Precision fastening support for marine equipment, shipboard systems, and demanding assemblies.',
+    description: 'Precision fasteners manufactured for marine equipment, shipboard systems, and demanding assemblies.',
     image: assetPath('assets/images/industries/defense.webp'),
     alt: 'Organized trays of precision fasteners for demanding equipment assemblies',
   },
   {
     number: '04',
     title: 'Oil & Gas',
-    description: 'Components developed for critical energy equipment, infrastructure, and field applications.',
+    description: 'Fasteners manufactured for critical energy equipment, infrastructure, and field applications.',
     image: assetPath('assets/images/hero-industries/oil-gas-client-mobile.jpg'),
     alt: 'Bolted industrial pipeline valve in an oil and gas refinery',
   },
   {
     number: '05',
     title: 'Automotive',
-    description: 'Repeatable component manufacturing support for vehicle systems, tooling, and production programs.',
+    description: 'Fasteners manufactured for vehicle systems, tooling, and production programs.',
     image: assetPath('assets/images/hero-industries/law-enforcement-client-mobile.jpg'),
     alt: 'Robotic production equipment and precision machined components in an industrial facility',
   },
   {
     number: '06',
     title: 'Custom',
-    description: 'Made-to-spec solutions shaped around unique drawings, materials, tolerances, and end use.',
+    description: 'Custom made-to-spec fasteners manufactured from unique drawings, materials, tolerances, and end use.',
     image: assetPath('assets/images/industries/precision-industrial.webp'),
     alt: 'Precision machined components arranged in front of a modern CNC machine',
   },
@@ -259,7 +259,7 @@ export const differentiators = [
   {
     number: '02',
     title: 'Dimensional Consistency',
-    description: 'Attention to the features, tolerances, and fit that make every component perform as intended.',
+    description: 'Attention to the features, tolerances, and fit that make every fastener perform as intended.',
   },
   {
     number: '03',

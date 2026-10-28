@@ -62,6 +62,7 @@ export default function App() {
               <p>
                 All dies are manufactured in-house, allowing us to maintain precise control over tooling quality, dimensional accuracy, and production consistency.
               </p>
+              <p>Creative Fasteners is AS9100 compliant.</p>
               <a className="text-link" href="#quality">See the quality-control process <span aria-hidden="true">↗</span></a>
             </Reveal>
 
@@ -160,7 +161,7 @@ export default function App() {
                   number="04"
                   eyebrow="Industries Served"
                   title="Precision Where Performance Matters"
-                  description="Manufacturing support shaped around demanding drawings, controlled requirements, and applications where component consistency is essential."
+                  description="Manufacturing precision fasteners to exact specifications, with a focus on quality, consistency, and performance."
                 />
                 <a className="button button--outline-dark" href="#rfq">Discuss Your Application</a>
               </div>
