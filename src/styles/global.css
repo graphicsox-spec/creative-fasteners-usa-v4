@@ -2582,7 +2582,7 @@ h3 {
 .capability-carousel__viewport {
   position: relative;
   width: 100%;
-  aspect-ratio: 1920 / 985;
+  aspect-ratio: 1920 / 850;
   overflow: hidden;
   background: #e8eef5;
 }
@@ -2621,12 +2621,6 @@ h3 {
 
 .capability-carousel__slide img {
   object-fit: cover;
-}
-
-@media (min-width: 768px) {
-  .capability-carousel__slide img {
-    opacity: 0.7;
-  }
 }
 
 .capability-carousel__content {
@@ -2737,27 +2731,6 @@ h3 {
   100% { opacity: 0; transform: translateX(24%); }
 }
 
-.capability-carousel__cta {
-  position: absolute;
-  z-index: 3;
-  top: var(--desktop-cta-top);
-  left: 5.55%;
-  width: 33.9%;
-  height: 12.25%;
-  border-radius: clamp(0.45rem, 1vw, 1rem);
-  cursor: pointer;
-}
-
-.capability-carousel__cta:hover {
-  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.46), 0 10px 28px rgba(15, 82, 186, 0.24);
-}
-
-.capability-carousel__cta:focus-visible {
-  outline: 3px solid #fff;
-  outline-offset: -5px;
-  box-shadow: 0 0 0 4px var(--blue);
-}
-
 .capability-carousel__controls {
   position: absolute;
   z-index: 5;
@@ -2862,23 +2835,59 @@ h3 {
     object-fit: contain;
   }
 
-  .capability-carousel__cta {
-    top: var(--mobile-cta-top);
-    left: 11.1%;
-    width: 78.75%;
-    height: 7.15%;
-    border-radius: 0.75rem;
+  .capability-carousel__content--mobile {
+    top: 59.5%;
+    left: 8%;
+    right: auto;
+    width: 84%;
+    align-items: stretch;
+    transform: none;
+  }
+
+  .capability-carousel__content--dense {
+    top: 52%;
+  }
+
+  .capability-carousel__content--mobile h3 {
+    font-size: clamp(1.3rem, 6.2vw, 2rem);
+    line-height: 1.02;
+  }
+
+  .capability-carousel__content--mobile p {
+    margin-top: 0.55rem;
+    font-size: clamp(0.76rem, 3.05vw, 1rem);
+    line-height: 1.16;
+  }
+
+  .capability-carousel__content--mobile ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem 0.55rem;
+    margin-top: 0.7rem;
+  }
+
+  .capability-carousel__content--mobile li {
+    gap: 0.35rem;
+    font-size: clamp(0.64rem, 2.65vw, 0.86rem);
+    line-height: 1.1;
+  }
+
+  .capability-carousel__content--mobile li img {
+    width: clamp(1rem, 4.3vw, 1.35rem);
+    height: clamp(1rem, 4.3vw, 1.35rem);
+  }
+
+  .capability-carousel__content--mobile > a.capability-carousel__button {
+    align-self: center;
+    width: 88%;
+    min-height: 2.55rem;
+    margin-top: 0.85rem;
+    padding: 0.65rem 0.8rem;
+    border-radius: 0.7rem;
+    font-size: clamp(0.75rem, 3vw, 0.98rem);
   }
 
   .capability-carousel__slide--desktop-mobile-fallback img {
     object-fit: contain;
-  }
-
-  .capability-carousel__cta--mobile-fallback {
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
   }
 
   .capability-carousel__controls {

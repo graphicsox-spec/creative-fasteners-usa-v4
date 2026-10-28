@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useReducedMotion } from '../../hooks/useReducedMotion';
 
 const asset = (path: string) => `${import.meta.env.BASE_URL}assets/${path}`;
@@ -11,27 +11,24 @@ type Slide = {
   highlights: string[];
   desktopImage: string;
   mobileImage?: string;
-  mobileCtaTop?: string;
 };
 
 const slides: Slide[] = [
   {
     id: 'cold-heading',
     title: 'Cold Heading',
-    description: '',
+    description: 'Progressive cold forming processes that shape solid metal into strong, dimensionally consistent precision fasteners.',
     highlights: ['High Volume', 'Tight Tolerances', 'Stronger Components', 'Cost Effective'],
     desktopImage: asset('images/capability-banners/cold-heading-desktop.jpg'),
     mobileImage: asset('images/capability-banners/cold-heading-mobile.jpg'),
-    mobileCtaTop: '89.15%',
   },
   {
     id: 'thread-rolling',
     title: 'Thread Rolling',
-    description: '',
+    description: 'Controlled rolling and threading processes that produce accurate thread profiles, consistent pitch, and improved material strength.',
     highlights: ['Accurate Thread Profiles', 'Consistent Pitch', 'Higher Strength', 'Wide Size Range'],
     desktopImage: asset('images/capability-banners/thread-rolling-desktop.jpg'),
     mobileImage: asset('images/capability-banners/thread-rolling-mobile.jpg'),
-    mobileCtaTop: '89.15%',
   },
   {
     id: 'secondary-operations',
@@ -40,7 +37,6 @@ const slides: Slide[] = [
     highlights: ['Heat Treating', 'Plating', 'Patching', 'Black Oxide', 'Passivation', 'Drilling', 'Grinding'],
     desktopImage: asset('images/capability-banners/secondary-operations-desktop.jpg'),
     mobileImage: asset('images/capability-banners/secondary-operations-mobile.jpg'),
-    mobileCtaTop: '89.15%',
   },
 ];
 
@@ -135,36 +131,29 @@ export function CapabilityConsole() {
                 src={isMobile && slide.mobileImage ? slide.mobileImage : slide.desktopImage}
                 alt={`${slide.title} manufacturing capability banner`}
                 width={isMobile && slide.mobileImage ? 1080 : 1920}
-                height={isMobile && slide.mobileImage ? 1920 : 985}
+                height={isMobile && slide.mobileImage ? 1920 : 850}
                 loading={index === 0 ? 'eager' : 'lazy'}
                 fetchPriority={index === 0 ? 'high' : 'auto'}
               />
               <figcaption className="capability-carousel__sr-only">{slide.title}</figcaption>
-              {!isMobile ? (
-                <div className="capability-carousel__content" aria-hidden={!isActive}>
-                  <h3>{slide.title}</h3>
-                  {slide.description ? <p>{slide.description}</p> : null}
-                  <ul>
-                    {slide.highlights.map((highlight) => (
-                      <li key={highlight}>
-                        <img src={checkMark} alt="" aria-hidden="true" />
-                        <span>{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <a className="button button--primary capability-carousel__button" href="#rfq" tabIndex={isActive ? 0 : -1}>
-                    Request a Quote
-                  </a>
-                </div>
-              ) : hasMobileArtwork ? (
-                <a
-                  className="capability-carousel__cta"
-                  href="#rfq"
-                  aria-label={`Request a quote for ${slide.title}`}
-                  tabIndex={isActive ? 0 : -1}
-                  style={{ '--mobile-cta-top': slide.mobileCtaTop } as CSSProperties}
-                />
-              ) : null}
+              <div
+                className={`capability-carousel__content${isMobile ? ' capability-carousel__content--mobile' : ''}${isMobile && slide.id === 'secondary-operations' ? ' capability-carousel__content--dense' : ''}`}
+                aria-hidden={!isActive}
+              >
+                <h3>{slide.title}</h3>
+                {slide.description ? <p>{slide.description}</p> : null}
+                <ul>
+                  {slide.highlights.map((highlight) => (
+                    <li key={highlight}>
+                      <img src={checkMark} alt="" aria-hidden="true" />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a className="button button--primary capability-carousel__button" href="#rfq" tabIndex={isActive ? 0 : -1}>
+                  Request a Quote
+                </a>
+              </div>
             </figure>
           );
         })}
